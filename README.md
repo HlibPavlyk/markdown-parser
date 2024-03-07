@@ -1,6 +1,10 @@
 # Markdown Parser
 
+This console application allows you to parse markdown into html.
 
+The result can be displayed in the console or saved to a file.
+
+This application suports both Windows and Linux operating systems.
 
 ## How to set up it locally?
 
@@ -100,19 +104,19 @@ Lets parse text file with Markdown markup test.txt and save result to test.html 
 
 
 
-'''
+``
 Поставили надгробок. `Думають`, як підписати, від кого? **Від друзів?** Так начебто які ж вони друзі, раз зжерли... _Від_ворогів?_ Так 2 роки разом пліч-о-пліч
-'''
+``
 жили, полювали, ніхто в образі не був... Подумали і написали `Від колег`.
 ```
 
-### Parse it
+### Parse it:
 
 ```cmd
 MarkdownParser-win.exe -i test.txt -o test.html 
 ```
 
-### test.html
+### test.html :
 
 ```html
 <p>Вовки загнали собаку, <tt>_</tt> оточили, <b>хочуть зжерти</b>. Собака просить не вбивати її, натомість обіцяє допомагати заганяти овець та іншу худобу.</p>
@@ -126,3 +130,4 @@ MarkdownParser-win.exe -i test.txt -o test.html
 
 ## Revert Commit
 
+[Link](https://github.com/fokaaas/markdown-parser/commit/583d2de561e477b049711f8b901ca9fbfe9747cf)
