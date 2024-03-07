@@ -11,7 +11,7 @@ namespace MarkdownParser
                 throw new FileNotFoundException($"File '{filePath}' not found");
             }
 
-            if (!filePath.EndsWith(".md", StringComparison.OrdinalIgnoreCase))
+            if (!filePath.EndsWith(".txt", StringComparison.OrdinalIgnoreCase))
             {
                 throw new ArgumentException("Invalid file extension. File must end with '.md'.");
             }
