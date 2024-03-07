@@ -13,13 +13,13 @@ In this instruction is used Windows CMD
 Firstly, clone this repo using web URL:
 
 ```cmd
-git clone https://github.com/HlibPavlyk/MarkdowmParser.git
+git clone https://github.com/HlibPavlyk/MarkdownParser.git
 ```
 
 or via SSH certificate:
 
 ```cmd
-git clone git@github.com:HlibPavlyk/MarkdowmParser.git
+git clone git@github.com:HlibPavlyk/MarkdownParser.git
 ```
 
 Then move to that repo:
@@ -39,19 +39,19 @@ MarkdownParser-win.exe -i <path> -o <path>
 Firstly, clone this repo using web URL:
 
 ```bash
-git clone https://github.com/HlibPavlyk/MarkdowmParser.git
+git clone https://github.com/HlibPavlyk/MarkdownParser.git
 ```
 
 or via SSH certificate:
 
 ```bash
-git clone git@github.com:HlibPavlyk/MarkdowmParser.git
+git clone git@github.com:HlibPavlyk/MarkdownParser.git
 ```
 
 Then move to that repo:
 
 ```bash
-cd /MarkdownParser
+cd MarkdownParser/
 ```
 
 Change accessebility mode:
