@@ -3,6 +3,10 @@ using MarkdownParser;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+/*string content = FileOperations.ReadFileContent("test.txt");
+content = content.ConvertToHtml();
+Console.WriteLine(content);*/
+
 Parser.Default.ParseArguments<CommandLineOptions>(args)
        .WithParsed(options =>
        {
