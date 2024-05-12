@@ -3,31 +3,53 @@ using MarkdownParser;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-/*string content = FileOperations.ReadFileContent("test.txt");
-content = content.ConvertToHtml();
-Console.WriteLine(content);*/
-
 Parser.Default.ParseArguments<CommandLineOptions>(args)
-       .WithParsed(options =>
-       {
-           try
-           {
-               string content = FileOperations.ReadFileContent(options.InputFilePath);
-               content = content.ConvertToHtml();
+    .WithParsed(options =>
+    {
+        try
+        {
+            string content = FileOperations.ReadFileContent(options.InputFilePath);
 
-               if (options.OutputFilePath == null)
-               {
-                   Console.WriteLine(content);
-               }
-               else
-               {
-                   FileOperations.WriteToHtmlFile(options.OutputFilePath, content);
-               }
-           }
+            if (!string.IsNullOrEmpty(options.OutputFormat))
+            {
+                switch (options.OutputFormat.ToLower())
+                {
+                    case "escape":
+                        content = content.ConvertToEscape();
+                        break;
+                    case "html":
 
-           catch (Exception ex)
-           {
-               Console.Error.WriteLine($"Wrong: {ex.Message}");
-               Environment.Exit(1);
-           }
-       });
+                        content = content.ConvertToHtml();
+                        break;
+                    default:
+
+                        Console.Error.WriteLine($"Unknown format: {options.OutputFormat}");
+                        Environment.Exit(1);
+                        break;
+                }
+            }
+            else if(string.IsNullOrEmpty(options.OutputFilePath))
+            {
+                content = content.ConvertToEscape();
+            }
+            else
+            {
+                content = content.ConvertToHtml();
+            }
+            
+
+            if (string.IsNullOrEmpty(options.OutputFilePath))
+            {
+                Console.WriteLine(content);
+            }
+            else
+            {
+                FileOperations.WriteToHtmlFile(options.OutputFilePath, content);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error: {ex.Message}");
+            Environment.Exit(1);
+        }
+    });

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkdownParser", "src\MarkdownParser.csproj", "{F1C96A07-67FB-4D0A-8389-84977157B98E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkdownParserTests", "tests\MarkdownParserTests\MarkdownParserTests.csproj", "{E571F464-25DB-4D55-8B7A-DCB7A8B340CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkdownParserTests", "tests\MarkdownParserTests\MarkdownParserTests.csproj", "{D7704E9B-F7AA-4613-B67A-79F9A5011480}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{F1C96A07-67FB-4D0A-8389-84977157B98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1C96A07-67FB-4D0A-8389-84977157B98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1C96A07-67FB-4D0A-8389-84977157B98E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E571F464-25DB-4D55-8B7A-DCB7A8B340CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E571F464-25DB-4D55-8B7A-DCB7A8B340CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E571F464-25DB-4D55-8B7A-DCB7A8B340CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E571F464-25DB-4D55-8B7A-DCB7A8B340CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7704E9B-F7AA-4613-B67A-79F9A5011480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7704E9B-F7AA-4613-B67A-79F9A5011480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7704E9B-F7AA-4613-B67A-79F9A5011480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7704E9B-F7AA-4613-B67A-79F9A5011480}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

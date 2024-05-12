@@ -10,6 +10,9 @@ namespace MarkdownParser
 
         [Option('o', "output", Required = false, HelpText = "Output file .html path.")]
         public string OutputFilePath { get; set; }
+        
+        [Option('f', "format", Required = false, HelpText = "Output format (escape/html)")]
+        public string OutputFormat { get; set; }
 
     }
 }
