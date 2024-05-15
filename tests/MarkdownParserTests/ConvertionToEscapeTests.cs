@@ -12,7 +12,7 @@ namespace MarkdownParserTests
     {
         [Theory]
         // Paragraph
-        [InlineData("Hello world\n\nI am Lucifer", "hahahahhahahah")]
+        [InlineData("Hello world\n\nI am Lucifer", "Hello world\r\n\nI am Lucifer\r\n")]
         [InlineData("Hello world\n\n\n\n\n\n\n\n\nI am Lucifer", "Hello world\r\n\nI am Lucifer\r\n")]
         // Bold
         [InlineData("Hello **world**", "Hello \x1b[1mworld\x1b[0m\r\n")]
