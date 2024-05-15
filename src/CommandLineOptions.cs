@@ -6,13 +6,13 @@ namespace MarkdownParser
     {
 
         [Option('i', "input", Required = true, HelpText = "Input file .txt path.")]
-        public string InputFilePath { get; set; }
+        public string? InputFilePath { get; set; }
 
         [Option('o', "output", Required = false, HelpText = "Output file .html path.")]
-        public string OutputFilePath { get; set; }
+        public string? OutputFilePath { get; set; }
         
         [Option('f', "format", Required = false, HelpText = "Output format (escape/html)")]
-        public string OutputFormat { get; set; }
+        public string? OutputFormat { get; set; }
 
     }
 }

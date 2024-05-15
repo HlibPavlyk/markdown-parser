@@ -4,9 +4,9 @@ namespace MarkdownParser
 {
     public static class FileOperations
     {
-        public static string ReadFileContent(string filePath)
+        public static string ReadFileContent(string? filePath)
         {
-            if (!File.Exists(filePath))
+            if (!File.Exists(filePath) || string.IsNullOrEmpty(filePath))
             {
                 throw new FileNotFoundException($"File '{filePath}' not found");
             }

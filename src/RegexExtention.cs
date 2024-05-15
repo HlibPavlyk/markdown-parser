@@ -13,9 +13,9 @@ namespace MarkdownParser
         };
         private static readonly List<RegexModel> regexModelsEscape = new List<RegexModel>
         {
-            new RegexModel(@"(?<=[ ,.:;>\n\t]|^)\*\*(?=\S)(.+?)(?<=\S)\*\*(?=[ ,.:;<\n\t]|$)", "\x1b[1m$1\x1b[0m"),
-            new RegexModel(@"(?<=[ ,.:;>\n\t]|^)_(?=\S)(.+?)(?<=\S)_(?=[ ,.:;<\n\t]|$)", "\x1b[3m$1\x1b[0m"),
-            new RegexModel(@"(?<=[ ,.:;>\n\t]|^)\`(?=\S)(.+?)(?<=\S)\`(?=[ ,.:;<\n\t]|$)", "\x1b[7m$1\x1b[0m")
+            new RegexModel(@"(?<=[ ,.:;>\r\n\t]|^)\*\*(?=\S)(.+?)(?<=\S)\*\*(?=[ ,.:;<\r\n\t]|$)", "\x1b[1m$1\x1b[0m"),
+            new RegexModel(@"(?<=[ ,.:;>\r\n\t]|^)_(?=\S)(.+?)(?<=\S)_(?=[ ,.:;<\r\n\t]|$)", "\x1b[3m$1\x1b[0m"),
+            new RegexModel(@"(?<=[ ,.:;>\r\n\t]|^)\`(?=\S)(.+?)(?<=\S)\`(?=[ ,.:;<\r\n\t]|$)", "\x1b[7m$1\x1b[0m")
 
         };
         private static readonly string preformattedTextModelPattern = @"`\`\`\r?\n([\s\S]*?)\r?\n\`\`\`";
