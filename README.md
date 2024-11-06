@@ -25,13 +25,13 @@ This instruction utilizes Windows CMD.
 Firstly, clone this repository using either the web URL:
 
 ```cmd
-git clone https://github.com/HlibPavlyk/MarkdownParser.git
+git clone https://github.com/HlibPavlyk/markdown-parser.git
 ```
 
 or via SSH certificate:
 
 ```cmd
-git clone git@github.com:HlibPavlyk/MarkdownParser.git
+git clone git@github.com:HlibPavlyk/markdown-parser.git
 ```
 
 #### Moving to the Repository
@@ -39,7 +39,7 @@ git clone git@github.com:HlibPavlyk/MarkdownParser.git
 Then navigate to the cloned repository:
 
 ```cmd
-cd MarkdownParser
+cd markdown-parser
 ```
 
 #### Running the Application
@@ -57,13 +57,13 @@ MarkdownParser-win.exe --input <path> --output <path> --format <type>
 Firstly, clone this repository using either the web URL:
 
 ```bash
-git clone https://github.com/HlibPavlyk/MarkdownParser.git
+git clone https://github.com/HlibPavlyk/markdown-parser.git
 ```
 
 or via SSH certificate:
 
 ```bash
-git clone git@github.com:HlibPavlyk/MarkdownParser.git
+git clone git@github.com:HlibPavlyk/markdown-parser.git
 ```
 
 #### Moving to the Repository
@@ -71,7 +71,7 @@ git clone git@github.com:HlibPavlyk/MarkdownParser.git
 Then navigate to the cloned repository:
 
 ```bash
-cd MarkdownParser/
+cd markdown-parser/
 ```
 
 #### Changing Accessibility Mode
@@ -104,7 +104,7 @@ After installing the .NET SDK, you can follow these steps to run the tests:
 
 2. **Navigate to the project directory**:
 
-   Use the `cd` command to navigate to the `MarkdowmParser` directory, as we did in the previous paragraph.
+   Use the `cd` command to navigate to the `markdown-parser` directory, as we did in the previous paragraph.
 
 3. **Run the `dotnet test` command**:
 
